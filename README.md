@@ -21,4 +21,4 @@ Monorepo template using changesets as a versioning tool.
 - More things to do compared to semantic-release tool which create releases based on conventional commit format
 - Changesets is not as stable and extensible as semantic-release
 - Changesets is designed specifically for using with github and npm, commands like `changeset publish` works with npm but not others
-
+- Changesets can't write and customize release note
