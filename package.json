@@ -2,7 +2,7 @@
 	"name": "monorepo-changesets-template",
 	"version": "0.0.1",
 	"scripts": {
-		"npm-lock": "npm install --package-lock-only",
+		"npm-lock": "mkdir -p npm && cp package.json npm && cd npm && npm install --package-lock-only && cp package-lock.json .. && cd .. && rm -rf npm ",
 		"pnpm-lock": "pnpm install --lockfile-only",
 		"yarn-lock": "mkdir -p yarn && cp package.json yarn && cd yarn && yarn && cp yarn.lock .. && cd .. && rm -rf yarn",
 		"lock": "npm run pnpm-lock && npm run npm-lock && npm run yarn-lock"
