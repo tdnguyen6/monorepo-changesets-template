@@ -7,10 +7,10 @@
 		"yarn-lock": "mkdir -p yarn && cp package.json yarn && cd yarn && yarn && cp yarn.lock .. && cd .. && rm -rf yarn",
 		"lock": "npm run pnpm-lock && npm run npm-lock && npm run yarn-lock"
 	},
-	"dependencies": {
-		"@changesets/cli": "^2.26.2"
-	},
 	"workspaces": [
 		"packages/*"
-	]
+	],
+	"devDependencies": {
+		"@changesets/cli": "^2.26.2"
+	}
 }
